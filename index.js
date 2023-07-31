@@ -1,13 +1,28 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  //words should read the same forward and backwards
+  const inputWord = word.toLowerCase();
+  const newWord = inputWord.split('').reverse().join('');
+  
+  //creating a function to check if the words match
+
+  if (newWord == inputWord){
+    return true;
+  } else{
+    return false;
+  }
 }
 
 /* 
-  Add your pseudocode here
+  input:"dad"
+  output:true
 */
 
 /*
   Add written explanation of your solution here
+  if the user's word is palindrome(read the same forward and backwards),
+  it should return true
+  if the user's word is not palindrome, it should return false
 */
 
 // You can run `node index.js` to view these console logs
